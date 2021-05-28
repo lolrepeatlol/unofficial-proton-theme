@@ -35,10 +35,10 @@ $insensitive_fg_color: if($variant !='dark', transparentize($fg_color, 0.45), tr
 $insensitive_bg_color: if($variant !='dark', mix($bg_color, $base_color, 40%), lighten($bg_color, 2%));
 
 $header_bg: red;
-@if $transparency=='true' and ($variant=='light' or $variant=='lighter') { $header_bg: transparentize(#e7e8eb, 0.05); }
-@if $transparency=='false' and ($variant=='light' or $variant=='lighter') { $header_bg: #e7e8eb; }
-@if $transparency=='true' and ($variant=='dark' or $variant=='darker') { $header_bg: transparentize(#2f343f, 0.03); }
-@if $transparency=='false' and ($variant=='dark' or $variant=='darker') { $header_bg: #2f343f; }
+@if $transparency=='true' and ($variant=='light' or $variant=='lighter') { $header_bg: transparentize(#F9F9FB, 0.05); }
+@if $transparency=='false' and ($variant=='light' or $variant=='lighter') { $header_bg: #F9F9FB; }
+@if $transparency=='true' and ($variant=='dark' or $variant=='darker') { $header_bg: transparentize(#1C1B22, 0.03); }
+@if $transparency=='false' and ($variant=='dark' or $variant=='darker') { $header_bg: #1C1B22; }
 
 $header_bg_backdrop: if($variant == 'dark' or $variant=='darker', lighten($header_bg, 1.5%), lighten($header_bg, 3%));
 
